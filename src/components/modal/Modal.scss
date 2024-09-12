@@ -1,0 +1,66 @@
+@import "../../variables.scss";
+
+.modal-dialog {
+  border: none;
+  border-radius: 20px;
+  margin-right: 100px;
+  @media screen and (max-width: 768px) {
+    margin: auto;
+    width: 350px;
+  }
+}
+
+.modal {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  top: 25%;
+  left: 50%;
+  background-color: $text-color;
+  z-index: 10;
+  padding: 20px;
+  @media screen and (max-width: 768px) {
+    width: 330px;
+    padding: 5px;
+  }
+
+  &__close {
+    position: absolute;
+    height: 45px;
+    left: 88%;
+    right: 2%;
+    top: 16px;
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 70px;
+    height: 90px;
+  }
+
+  &__title {
+    font-family: $font-family-heavitas;
+    font-size: 24px;
+    color: $text-color-blue;
+    font-weight: 400;
+    line-height: 28px;
+    @media screen and (max-width: 768px) {
+      
+      font-size: 20px;
+    }
+  }
+  &__text {
+    font-family: $font-family-montserrat;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    text-align: center;
+    width: auto;
+    @media screen and (max-width: 768px) {
+      
+      font-size: 16px;
+    }
+  }
+}

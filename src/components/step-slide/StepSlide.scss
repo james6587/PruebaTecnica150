@@ -1,0 +1,50 @@
+@import "../../fonts";
+@import "../../variables";
+
+
+.step {
+    display: flex;
+    width: 335px;
+    justify-content: center;
+    margin-left: 100px;
+    @media screen and (max-width: 768px) {
+      margin-left: 0px;
+    }
+  
+    &__img {
+      width: 90px;
+      height: 88px;
+      padding-top: 30px;
+      padding-right: 22px;
+      @media screen and (max-width: 768px) {
+        width: 70px;
+      height: 68px;
+      padding-top: 15px;
+      padding-right: 0px;
+      }
+    }
+  
+    &__copy {
+      width: 216px;
+  
+      .title {
+        font-family: $font-family-heavitas;
+        font-size: 24px;
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+        }
+        color: #0f5ee8;
+        font-weight: 400;
+        line-height: 28px;
+      }
+  
+      .desc {
+        font-family: $font-family-montserrat;
+        font-size: 16px;
+        color: #000;
+        font-weight: 400;
+        width: auto;
+      }
+    }
+  }
+  

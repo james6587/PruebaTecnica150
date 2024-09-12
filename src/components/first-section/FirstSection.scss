@@ -1,0 +1,113 @@
+@import '../../variables';
+@import '../../fonts';
+
+.section1 {
+  background-image: url('../../public/img/prueba.png');
+  background-size: cover;
+
+  background-position-y: -100px;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    height: 90vh;
+  }
+
+  &__text1 {
+    align-content: center;
+    padding: 0 4vw;
+    @media screen and (max-width: 768px) {
+      padding: 0;
+      font-size: 36px;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .section1-button {
+      @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+    }
+
+    &__title {
+      font-family: $font-family-heavitas;
+      font-size: 48px;
+      color: $text-color;
+      font-weight: 400;
+      line-height: 120%;
+      width: 600px;
+
+      @media screen and (max-width: 768px) {
+        padding: 20px;
+        font-size: 20px;
+        width: 320px;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    &__desc {
+      font-family: $font-family-montserrat;
+      font-size: 18px;
+      color: $text-color;
+      font-weight: 400;
+      @media screen and (max-width: 768px) {
+        padding: 20px 55px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__text2 {
+    justify-content: center;
+    align-content: center;
+    margin-left: 190px;
+    @media screen and (max-width: 768px) {
+      margin-left: 0px;
+      margin-top: 30px;
+      height: 300px;
+    }
+
+    .text2-img {
+      @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+      }
+    }
+
+    &__img {
+      position: relative;
+      right: 50px;
+      top: 10px;
+
+      @media screen and (max-width: 768px) {
+        position: inherit;
+        width: 85%;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.showDesktop {
+  display: block;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.showMobile {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}

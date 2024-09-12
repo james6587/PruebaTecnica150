@@ -1,0 +1,24 @@
+@import "../../fonts";
+@import "../../variables";
+
+.swiper-cont {
+  height: 370px;
+  padding-top: 50px;
+}
+
+.mySwiper {
+  width: 920px;
+  @media screen and (max-width: 768px) {
+    width: 340px;
+  }
+
+  .swiper-slide {
+    width: 400px;
+  }
+
+  .swiper-pagination{
+    @media screen and (max-width: 768px) {
+      bottom: -14px!important;
+    }
+  }
+}
