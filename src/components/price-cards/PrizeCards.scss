@@ -1,98 +1,115 @@
-@import "../../variables";
-@import "../../fonts";
+@import '../../variables';
+@import '../../fonts';
+
+.swiper {
+  margin: 0;
+}
 
 .swiper-container {
-  height: 520px;
+  height: 52rem;
   display: flex;
   align-items: center;
 
+  @media screen and (max-width: 1100px) {
+    height: 20rem;
+  }
+
   @media screen and (max-width: 768px) {
-    width: 100%;
-    height: 98px;
+    width: 80%;
+    height: 17rem;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 6fr 1fr;
   }
 }
 
 .mySwiperPrize {
+  width: 100%;
   @media screen and (max-width: 768px) {
-    height: 160px;
-    margin-top: 20px;
+    height: 16rem;
+    margin-top: 2rem;
+    width: 28rem;
   }
 
-  .swiper-slide{
-
+  .swiper-slide {
     @media screen and (max-width: 768px) {
       display: flex;
-    justify-content: center;
-    align-items: center;
+      justify-content: center;
+      align-items: center;
     }
-    
   }
 
   .swiper-wrapper {
-    height: 520px !important;
-    @media screen and (max-width: 768px) {
-      
-      height: 130px !important;
+    height: 52rem;
+    width: 44.2rem;
+
+    @media screen and (max-width: 1100px) {
+      height: 20rem;
     }
-}
+
+    @media screen and (max-width: 768px) {
+      height: 13rem;
+    }
+  }
 }
 
 .swiper-button {
-  gap: 15px;
+  gap: 1.5rem;
   display: flex;
   flex-direction: column;
-  margin-left: 28px;
+  margin-left: 2.8rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1100px) {
     display: none;
   }
 
   &__up {
-    background-image: url("../../public/img/slider/up.svg");
+    background-image: url('../../img/slider/up.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 45px;
-    width: 45px;
+    height: 4.5rem;
+    width: 4.5rem;
     cursor: pointer;
   }
 
   &__down {
-    background-image: url("../../public/img/slider/down.svg");
+    background-image: url('../../img/slider/down.svg');
     background-size: contain;
-    height: 45px;
-    width: 45px;
+    height: 4.5rem;
+    width: 4.5rem;
     cursor: pointer;
   }
 }
 
 .swiper-button-mobile {
-  gap: 15px;
+  gap: 1.5rem;
   display: flex;
   flex-direction: column;
-  margin-left: 5px;
+  margin-left: 0.5rem;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1100px) {
     display: none;
   }
 
   &__left {
-    background-image: url("../../public/img/slider/right.svg");
+    background-image: url('../../img/slider/right.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 45px;
-    width: 45px;
+    height: 4.5rem;
+    width: 4.5rem;
     cursor: pointer;
   }
 
   &__right {
-    background-image: url("../../public/img/slider/left.svg");
+    background-image: url('../../img/slider/left.svg');
     background-size: contain;
-    height: 45px;
-    width: 45px;
+    height: 4.5rem;
+    width: 4.5rem;
     cursor: pointer;
   }
 }
-
 
 .prices {
   display: grid;

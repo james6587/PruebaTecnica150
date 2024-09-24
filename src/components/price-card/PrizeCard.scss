@@ -2,35 +2,35 @@
 @import '../../fonts';
 
 .card {
-  height: 160px;
-  width: 442px;
-  @media screen and (max-width: 768px) {
-    max-width: 410px;
-    margin-left: 20px;
-    width: 100%;
-    height: 98px;
-  }
+  height: 16rem;
+  width: 44.2rem;
   background-color: rgb(255, 255, 255, 85%);
-  border-radius: 20px;
+  border-radius: 2rem;
 
   /* List */
 
   border: 1px solid #1ea9ff;
   box-shadow: 0px 19.2471px 19.2471px rgba(30, 144, 255, 0.15);
 
+  @media screen and (max-width: 768px) {
+    max-width: 41rem;
+    width: 100%;
+    height: 9.8rem;
+  }
+
   &__flex {
     display: flex;
     align-items: center;
     align-content: center;
-    padding: 0 20px;
+    padding: 0 2rem;
     height: 100%;
 
     .card-img {
-      width: 113px;
-      height: 136px;
+      width: 11.3rem;
+      height: 13.6rem;
       @media screen and (max-width: 768px) {
-        width: 59px;
-        height: 71px;
+        width: 5.9rem;
+        height: 7.1rem;
       }
     }
   }
@@ -43,25 +43,25 @@
 
     &__title {
       text-transform: uppercase;
-      font-size: 24px;
+      font-size: 2.4rem;
       font-weight: 400;
       color: #0f5ee8;
       font-family: $font-family-heavitas;
-      line-height: 28px;
+      line-height: 2.8rem;
       @media screen and (max-width: 768px) {
-        line-height: 15px;
-        font-size: 12px;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
       }
     }
     &__desc {
-      font-size: 16px;
+      font-size: 1.6rem;
       font-weight: 400;
-      line-height: 22px;
+      line-height: 2.2rem;
       color: #000;
       font-family: $font-family-montserrat;
       @media screen and (max-width: 768px) {
-        line-height: 14px;
-        font-size: 10px;
+        line-height: 1.4rem;
+        font-size: 1rem;
       }
     }
   }

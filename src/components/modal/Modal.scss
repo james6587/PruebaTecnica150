@@ -1,17 +1,22 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 
 .modal-dialog {
   border: none;
   border-radius: 20px;
   margin-right: 100px;
+
+  @media screen and (max-width: 1100px) {
+    margin-right: auto;
+  }
+
   @media screen and (max-width: 768px) {
     margin: auto;
-    width: 350px;
+    width: 35rem;
   }
 }
 
 .modal {
-  width: 430px;
+  width: 43rem;
   display: flex;
   flex-direction: column;
   justify-content: right;
@@ -21,15 +26,16 @@
   background-color: $text-color;
   z-index: 10;
   padding: 20px;
+  overflow: hidden;
   @media screen and (max-width: 768px) {
     width: 330px;
     padding: 5px;
+    justify-content: center;
   }
 
   &__close {
     position: absolute;
     height: 45px;
-    left: 88%;
     right: 2%;
     top: 16px;
     cursor: pointer;
@@ -47,7 +53,6 @@
     font-weight: 400;
     line-height: 28px;
     @media screen and (max-width: 768px) {
-      
       font-size: 20px;
     }
   }
@@ -59,7 +64,6 @@
     text-align: center;
     width: auto;
     @media screen and (max-width: 768px) {
-      
       font-size: 16px;
     }
   }

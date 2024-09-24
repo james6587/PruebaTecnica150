@@ -2,15 +2,20 @@
 @import '../../fonts';
 
 .section2 {
-  background-image: url('../public/img/bci2.png');
+  background-image: url('../img/bci2.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center;
+  overflow-x: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+
   height: 100%;
   width: 100%;
+  padding: 3rem 0;
 
   &__how-works {
     width: 100%;
@@ -19,15 +24,20 @@
     display: grid;
 
     .how-works-img {
-      background-image: url('../public/img/funciona.png');
-      height: 228px;
-      width: 960px;
+      background-image: url('../img/funciona.png');
+      height: 22.8rem;
+      width: 96rem;
       background-size: contain;
+      background-repeat: no-repeat;
+
+      @media screen and (max-width: 1100px) {
+        width: 60.3rem;
+        height: 15rem;
+      }
 
       @media screen and (max-width: 768px) {
-        width: 353px;
-        height: 110px;
-        background-repeat: no-repeat;
+        width: 45rem;
+        height: 10rem;
       }
     }
   }
@@ -36,33 +46,32 @@
     display: flex;
     width: 1040px;
 
-    gap: 20px;
+    gap: 2rem;
     margin: auto;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
-    margin-bottom: 50px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 
     @media screen and (max-width: 768px) {
-      max-width: 350px;
-      overflow: scroll;
+      max-width: 35rem;
       margin: 0 auto;
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
 
     .tab {
       &__tab-text {
         font-family: $font-family-heavitas;
-        font-size: 16px;
+        font-size: 1.6rem;
         color: $text-color;
         font-weight: 400;
         margin: 0;
       }
       &__tab-underline {
-        height: 7px;
+        height: 0.7rem;
         width: 100%;
-        border-radius: 16px;
+        border-radius: 1.6rem;
         background-color: #ffe345;
       }
     }
@@ -74,29 +83,29 @@
     justify-content: center;
 
     .board {
-      background-image: url('../public/img/tablero.png');
+      background-image: url('../img/tablero.png');
 
       background-size: contain;
       background-repeat: no-repeat;
-      height: 900px;
-      width: 1450px;
-      @media screen and (max-width: 768px) {
-        background-image: url('../public/img/tablero-mobile.png');
-        width: 350px;
-        height: 690px;
+      height: 75rem;
+      width: 126rem;
+      @media screen and (max-width: 1100px) {
+        background-image: url('../img/tablero-mobile.png');
+        width: 35rem;
+        height: 69rem;
       }
 
       &__board-title {
         font-family: $font-family-heavitas;
-        font-size: 32px;
+        font-size: 3.2rem;
         color: $color-red;
         font-weight: 400;
-        line-height: 28px;
-        width: 589px;
+        line-height: 2.8rem;
+        width: 58.9rem;
         text-align: center;
         margin: 0 auto;
-        margin-top: 90px;
-        @media screen and (max-width: 768px) {
+        margin-top: 9rem;
+        @media screen and (max-width: 1100px) {
           display: none;
         }
       }

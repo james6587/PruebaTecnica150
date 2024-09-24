@@ -1,23 +1,17 @@
-@import "../../variables";
-@import "../../fonts";
+@import '../../variables';
+@import '../../fonts';
 
 .button {
   border: none;
   color: $text-color;
   font-family: $font-family-heavitas;
-  font-size: 16px;
+  font-size: 1.6rem;
   cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 18px 32px;
-  gap: 10px;
-
-  width: 247px;
-  height: 45px;
+  width: 24.7rem;
+  height: 4.5rem;
   background: #fc142a;
-  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25),
+  box-shadow:
+    inset -3px -3px 9px rgba(255, 255, 255, 0.25),
     inset 0px 3px 9px rgba(255, 255, 255, 0.3),
     inset 0px 1px 1px rgba(255, 255, 255, 0.6),
     inset 0px -8px 36px rgba(0, 0, 0, 0.3),

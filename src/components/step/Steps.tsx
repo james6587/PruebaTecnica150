@@ -27,7 +27,7 @@ const Steps = () => {
           320: {
             slidesPerView: 1,
           },
-          768: {
+          1100: {
             slidesPerView: 2,
           },
         }}

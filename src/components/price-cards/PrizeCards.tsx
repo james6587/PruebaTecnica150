@@ -36,7 +36,7 @@ const PrizeCards = () => {
             spaceBetween: 20,
             direction: 'horizontal',
           },
-          768: {
+          1100: {
             slidesPerView: 3,
             spaceBetween: 20,
             direction: 'vertical',

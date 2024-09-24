@@ -29,7 +29,7 @@ const Modal = ({ open, onClick }: ModalProps) => {
             onClick();
           }}
           className="modal__close"
-          src="../../public/img/Close.png"
+          src="../../img/Close.png"
           alt="close-img"
         />
         <img
